@@ -1,0 +1,56 @@
+.buttonBackTop {
+	background-color: #db91c1;
+	width: 30px;
+	border: none;
+	height: 30px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 25px;
+	transition: background-color .3s;
+	transition: background-color .3s, opacity .5s, visibility .5s;
+	opacity: 1;
+	z-index: 1000;
+}
+
+.buttonBackTop:after {
+	content: url('../../../assets/icons/backtop-bg.png');
+	font-family: "Roboto Condensed", arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.3em;
+    margin-left: -0.3em;
+	line-height: 47px;
+	color: #fff;
+}
+
+.buttonBackTop:hover {
+	cursor: pointer;
+	background-color: #333;
+}
+
+.buttonBackTop:active {
+	background-color: #555;
+}
+
+.buttonBackTop.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+	.buttonBackTop {
+		bottom: 20px;
+		right: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.buttonBackTop {
+		bottom: 10px;
+		right: 10px;
+	}
+}

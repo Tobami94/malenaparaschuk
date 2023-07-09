@@ -35,8 +35,8 @@ const about = {
   imageLink: require("../editable-stuff/profile_maleP.png"),
   imageSize: 375,
   message:
-    "Soy una apasionada desarrolladora full stack web con un enfoque especializado en el front end.  Me encanta traducir ideas creativas en código, creando interfaces hermosas y funcionales que cautivan a los usuarios y los mantienen comprometidos.  Me condiero una persona proactiva y comunicativa por naturaleza. Disfruto colaborar en equipos, compartir ideas y encontrar soluciones creativas a los desafíos que enfrentamos. En mi tiempo libre me dedico a cuidar plantas y animales, amo la naturaleza tanto como el mundo tech.",
-  resume: "https://drive.google.com/file/d/1mFAsZZ6naNamLq47gGngp0FR2rTKBZ07/view?usp=sharing",
+    "Soy una apasionada desarrolladora full stack web con un enfoque especializado en el front end.  Me encanta traducir ideas creativas en código, creando interfaces hermosas y funcionales que cautivan a los usuarios y los mantienen comprometidos.  Me considero una persona alegre y comunicativa por naturaleza. Disfruto colaborar en equipos, compartir ideas y encontrar soluciones creativas a los desafíos que enfrentamos. En mi tiempo libre me dedico a cuidar plantas y animales, amo la naturaleza tanto como el mundo tech.",
+  resume: "https://drive.google.com/file/d/17vpbMrPzxQTOv919nLtOcwRoT-YTrxyU/view?usp=drive_link",
 };
 
 
@@ -158,30 +158,6 @@ const experiences = {
   heading: "Experiencia",
   data: [
     {
-      role: 'Centro de atención telefónica',// Here Add Company Name
-      companylogo: require('../assets/img/fava.png'),
-      date: 'jul. 2016 - oct. 2017 · 1 año 4 meses · Presencial',
-      resumen:  'Trabajé en el departamento de servicio al cliente, donde manejé exitosamente bases de datos y mantuve mi propia cartera de clientes. Mis principales responsabilidades incluían la promoción y venta efectiva de varios planes y productos a los clientes. Además, brindé un soporte técnico excepcional, resolviendo rápidamente cualquier problema o inquietud que los clientes encontraran con los productos.'
-    },
-    {
-      role: 'Servicio de atención al cliente',// Here Add Company Name
-      companylogo: require('../assets/img/movistar.png'),
-      date: 'ago. 2018 - oct. 2018 · 3 meses · Presencial',
-      resumen:  'En el centro de llamadas de Movistar, brindamos soporte de ventas y servicio al cliente a los clientes por teléfono. Nuestro equipo está dedicado a ayudar a los clientes con sus consultas, inquietudes y solicitudes relacionadas con los productos y servicios de Movistar.'
-    },
-    {
-      role: 'Desarrollo web · Freelancer',// Here Add Company Name
-      companylogo: require('../assets/img/CMS.png'),
-      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
-      resumen:  'Realicé el tema de la Sociedad Hípica Lebrera, entre otras pagínas en producción, esta pagína mencionada fue desarrollada con CMS (wordpress), Javascript, Bootstrap y html principalmente.'
-    },
-    {
-      role: 'Front-End Developer · Freelancer',
-      companylogo: require('../assets/img/veterans.png'),
-      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
-      resumen: 'Corrección de errores y optimización en la web Veteranos FCB básquet.'
-    },
-    {
       role: 'Full stack web · Aplicaciones web en react · Proyecto',
       companylogo: require('../assets/img/pokedex.png'),
       date: 'abr. 2023 – may. 2023 · 1 mes · Proyecto',
@@ -193,6 +169,30 @@ const experiences = {
       date: 'May 2017 – May 2018',
       resumen: 'Diseño y desarrollo de una aplicación web que incluya características como: Funcionalidad de búsqueda Filtros combinados, Solicitudes a aplicaciones externas, Creación de publicaciones, Bases de datos relacionales, Creación de perfiles (operaciones CRUD)'
     },
+    {
+      role: 'Desarrollo web · Freelancer',
+      companylogo: require('../assets/img/CMS.png'),
+      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
+      resumen: 'Realicé el tema de la [Sociedad Hípica Lebrera](https://sociedadhipicalebrera.es), entre otras páginas en producción. Esta página mencionada fue desarrollada con CMS (wordpress), Javascript, Bootstrap y HTML principalmente.'
+    },
+    {
+      role: 'Front-End Developer · Freelancer',
+      companylogo: require('../assets/img/veterans.png'),
+      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
+      resumen: 'Corrección de errores y optimización en la web Veteranos FCB básquet.'
+    },
+    {
+      role: 'Servicio de atención al cliente', 
+      companylogo: require('../assets/img/movistar.png'),
+      date: 'ago. 2018 - oct. 2018 · 3 meses · Presencial',
+      resumen:  'En el centro de llamadas de Movistar, brindamos soporte de ventas y servicio al cliente a los clientes por teléfono. Nuestro equipo está dedicado a ayudar a los clientes con sus consultas, inquietudes y solicitudes relacionadas con los productos y servicios de Movistar.'
+    },
+    {
+      role: 'Centro de atención telefónica',
+      companylogo: require('../assets/img/fava.png'),
+      date: 'jul. 2016 - oct. 2017 · 1 año 4 meses · Presencial',
+      resumen:  'Trabajé en el departamento de servicio al cliente, donde manejé exitosamente bases de datos y mantuve mi propia cartera de clientes. Mis principales responsabilidades incluían la promoción y venta efectiva de varios planes y productos a los clientes. Además, brindé un soporte técnico excepcional, resolviendo rápidamente cualquier problema o inquietud que los clientes encontraran con los productos.'
+    }
   ]
 }
 

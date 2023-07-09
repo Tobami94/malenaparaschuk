@@ -57,7 +57,7 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
                 rel="noreferrer noopener"
                 role="button"
                 aria-label="Resume/CV">
-                Resumen
+                CV
               </a>
             </p>
           )}

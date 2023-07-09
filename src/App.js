@@ -47,6 +47,13 @@ const Home = React.forwardRef((props, ref) => {
           <Experience experiences={experiences}/>
         )
       }
+      {skills.show && (
+        <Skills
+          heading={skills.heading}
+          hardSkills={skills.hardSkills}
+          softSkills={skills.softSkills}
+        />
+      )}
       {repos.show && (
         <Project
           heading={repos.heading}
@@ -61,13 +68,6 @@ const Home = React.forwardRef((props, ref) => {
           message={leadership.message}
           img={leadership.images}
           imageSize={leadership.imageSize}
-        />
-      )}
-      {skills.show && (
-        <Skills
-          heading={skills.heading}
-          hardSkills={skills.hardSkills}
-          softSkills={skills.softSkills}
         />
       )}
       

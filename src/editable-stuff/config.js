@@ -36,7 +36,7 @@ const about = {
   imageSize: 375,
   message:
     "Soy una apasionada desarrolladora full stack web con un enfoque especializado en el front end.  Me encanta traducir ideas creativas en código, creando interfaces hermosas y funcionales que cautivan a los usuarios y los mantienen comprometidos.  Me considero una persona alegre y comunicativa por naturaleza. Disfruto colaborar en equipos, compartir ideas y encontrar soluciones creativas a los desafíos que enfrentamos. En mi tiempo libre me dedico a cuidar plantas y animales, amo la naturaleza tanto como el mundo tech.",
-  resume: "https://drive.google.com/file/d/1T1eaiH6uK3ti98R1EobFam1lAOHelK9b/view?usp=drive_link",
+  resume: "https://drive.google.com/file/d/1aQCB1Sn0LRZwv7_RS2nAfel6xxYwvXPv/view?usp=drive_link",
 };
 
 

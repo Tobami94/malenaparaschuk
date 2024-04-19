@@ -11,7 +11,7 @@ const mainBody = {
   firstName: "Malena",
   middleName: "",
   lastName: "Paraschuk",
-  message: " Apasionada por crear experiencias digitales profesionales. ¡Bienvenido/a a mi portafolio! ",
+  message: " Apasionada en crear experiencias digitales profesionales.",
   icons: [
     {
       image: "fa-github",
@@ -34,38 +34,93 @@ const about = {
   heading: "¿Quién soy?",
   imageLink: require("../editable-stuff/profile_maleP.png"),
   imageSize: 375,
-  message:
-    "Soy una apasionada desarrolladora full stack web con un enfoque especializado en el front end.  Me encanta traducir ideas creativas en código, creando interfaces hermosas y funcionales que cautivan a los usuarios y los mantienen comprometidos.  Me considero una persona alegre y comunicativa por naturaleza. Disfruto colaborar en equipos, compartir ideas y encontrar soluciones creativas a los desafíos que enfrentamos. En mi tiempo libre me dedico a cuidar plantas y animales, amo la naturaleza tanto como el mundo tech.",
+  message:(
+    <div> <p class="1">En 2011, decidí intentar crear temas personalizados para Foroactivo y caí de cabeza en la madriguera de la codificación,  el desarrollo web y el diseño gráfico.</p>
+       
+      <p class="2"> Si avanzamos hasta el día de hoy, he tenido el privilegio de crear algunas web importantes, foros, y algunas aplicaciones que demuestran algo de mis habilidades. Mi principal objetivo estos días es crear interfaces hermosas y accesibles  ¿a todos nos gusta una web funcional y visualmente agradable cierto?. Lo que más disfruto es crear, diseñar algo desde cero, en el punto ideal donde se unen el diseño gráfico y el desarrollo: cosas que se ven bien pero que también están bien construidas bajo toda esa capa de cosas bonitas. En mi tiempo libre, también he desarrollado algunos bots de <a class="hover:text #ff4f93" href="https://discord.com/">Discord</a>, programado algún que otro servidor de juegos multijugador, diseños por placer en Photoshop, etc. Una mezcla de cosas.</p>
+       
+      <p class="3"> Cuando no estoy frente al ordenador, normalmente estoy cuidando de mis plantas, entrenando karate o incluso realizando alguna caminata al aire libre. </p>
+      
+      </div>),
   resume: "https://drive.google.com/file/d/1KWSmXE1QO_xKN0bj8Pch2xBUaXLpmVN9/view?usp=drive_link",
 };
 
 
 const repos = {
-  show: true,
+  show: false,
   heading: "Últimos repositorios",
   gitHubUsername: "Tobami94", 
   reposLength: 4,
   specificRepos: [],
 };
 
-// Leadership SECTION
-const leadership = {
-  show: false,
-  heading: "Leadership",
-  message:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae auctor eu augue ut lectus arcu bibendum at varius. Libero justo laoreet sit amet cursus sit amet. Imperdiet dui accumsan sit amet nulla facilisi morbi. At auctor urna nunc id. Iaculis urna id volutpat lacus laoreet non curabitur gravida. Et magnis dis parturient montes nascetur ridiculus mus mauris. In nisl nisi scelerisque eu ultrices vitae auctor. Mattis nunc sed blandit libero volutpat sed cras ornare. Pulvinar neque laoreet suspendisse interdum consectetur libero.",
-  images: [
-    { 
-      img: require("../editable-stuff/profile_maleP.png"), 
-      label: "First slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+
+const experience = {
+  show: true,
+  heading: "Experiencia",
+  data: [
+   
+    {
+      role: 'Desarrollo web · Freelancer',
+      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
+      tools: [ 
+         { tool: "JavaScript"},
+         { tool: "React"},
+         { tool: "Vue"},
+         { tool: "PHP"},
+         { tool: "HTML & SCSS"},
+         { tool: "Contentful"},
+         { tool: "Wordpress"},
+         { tool: "Elementor"},
+    ],
+      resumen: 'Realicé el tema de la [Sociedad Hípica Lebrera](https://sociedadhipicalebrera.es), entre otras páginas en producción. Esta página mencionada fue desarrollada con CMS (wordpress), Javascript, Bootstrap y HTML principalmente.'
     },
-    { 
-      img: require("../editable-stuff/profile_maleP.png"), 
-      label: "Second slide label", 
-      paragraph: "Nulla vitae elit libero, a pharetra augue mollis interdum." 
+    {
+      role: 'Front-End Developer · Freelancer',
+      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
+      tools: [ 
+        { tool: "JavaScript"},
+        { tool: "React"},
+        { tool: "Vue"},
+        { tool: "PHP"},
+        { tool: "HTML & SCSS"},
+        { tool: "Contentful"},
+        { tool: "Wordpress"},
+        { tool: "Elementor"},
+   ],
+      resumen: 'Corrección de errores y optimización en la web Veteranos FCB básquet.'
     },
-  ],
+    {
+      role: 'Servicio de atención al cliente', 
+      date: 'ago. 2018 - oct. 2018 · 3 meses · Presencial',
+      tools: [ 
+        { tool: "JavaScript"},
+        { tool: "React"},
+        { tool: "Vue"},
+        { tool: "PHP"},
+        { tool: "HTML & SCSS"},
+        { tool: "Contentful"},
+        { tool: "Wordpress"},
+        { tool: "Elementor"},
+   ],
+      resumen:  'En el centro de llamadas de Movistar, brindamos soporte de ventas y servicio al cliente a los clientes por teléfono. Nuestro equipo está dedicado a ayudar a los clientes con sus consultas, inquietudes y solicitudes relacionadas con los productos y servicios de Movistar.'
+    },
+    {
+      role: 'Centro de atención telefónica',
+      date: 'jul. 2016 - oct. 2017 · 1 año 4 meses · Presencial',
+      tools: [ 
+        { tool: "JavaScript"},
+        { tool: "React"},
+        { tool: "Vue"},
+        { tool: "PHP"},
+        { tool: "HTML & SCSS"},
+        { tool: "Contentful"},
+        { tool: "Wordpress"},
+        { tool: "Elementor"},
+   ],
+      resumen:  'Trabajé en el departamento de servicio al cliente, donde manejé exitosamente bases de datos y mantuve mi propia cartera de clientes. Mis principales responsabilidades incluían la promoción y venta efectiva de varios planes y productos a los clientes. Además, brindé un soporte técnico excepcional, resolviendo rápidamente cualquier problema o inquietud que los clientes encontraran con los productos.'
+    }
+],
   imageSize: {
     width:"615",
     height:"450"
@@ -153,9 +208,9 @@ const getInTouch = {
   email: "malenaparaschuk@gmail.com",
 };
 
-const experiences = {
+const proyects = {
   show: true,
-  heading: "Experiencia",
+  heading: "Proyectos",
   data: [
     {
       role: 'Full stack web · Aplicaciones web en react · Proyecto',
@@ -169,33 +224,10 @@ const experiences = {
       date: 'May 2017 – May 2018',
       resumen: 'Diseño y desarrollo de una aplicación web que incluya características como: Funcionalidad de búsqueda Filtros combinados, Solicitudes a aplicaciones externas, Creación de publicaciones, Bases de datos relacionales, Creación de perfiles (operaciones CRUD)'
     },
-    {
-      role: 'Desarrollo web · Freelancer',
-      companylogo: require('../assets/img/CMS.png'),
-      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
-      resumen: 'Realicé el tema de la [Sociedad Hípica Lebrera](https://sociedadhipicalebrera.es), entre otras páginas en producción. Esta página mencionada fue desarrollada con CMS (wordpress), Javascript, Bootstrap y HTML principalmente.'
-    },
-    {
-      role: 'Front-End Developer · Freelancer',
-      companylogo: require('../assets/img/veterans.png'),
-      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
-      resumen: 'Corrección de errores y optimización en la web Veteranos FCB básquet.'
-    },
-    {
-      role: 'Servicio de atención al cliente', 
-      companylogo: require('../assets/img/movistar.png'),
-      date: 'ago. 2018 - oct. 2018 · 3 meses · Presencial',
-      resumen:  'En el centro de llamadas de Movistar, brindamos soporte de ventas y servicio al cliente a los clientes por teléfono. Nuestro equipo está dedicado a ayudar a los clientes con sus consultas, inquietudes y solicitudes relacionadas con los productos y servicios de Movistar.'
-    },
-    {
-      role: 'Centro de atención telefónica',
-      companylogo: require('../assets/img/fava.png'),
-      date: 'jul. 2016 - oct. 2017 · 1 año 4 meses · Presencial',
-      resumen:  'Trabajé en el departamento de servicio al cliente, donde manejé exitosamente bases de datos y mantuve mi propia cartera de clientes. Mis principales responsabilidades incluían la promoción y venta efectiva de varios planes y productos a los clientes. Además, brindé un soporte técnico excepcional, resolviendo rápidamente cualquier problema o inquietud que los clientes encontraran con los productos.'
-    }
+   
   ]
 }
 
 
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, experience, getInTouch, proyects };

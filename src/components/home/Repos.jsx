@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import Container from "react-bootstrap/Container";
 import { Jumbotron } from "./migration";
 import Row from "react-bootstrap/Row";
-import ProjectCard from "./ProjectCard";
+import ReposCard from "./ReposCard";
 import axios from "axios";
 
 const dummyProject = {
@@ -61,14 +61,14 @@ const Project = ({ heading, username, length, specfic }) => {
         <Row>
           {projectsArray.length
             ? projectsArray.map((project, index) => (
-              <ProjectCard
+              <ReposCard
                 key={`project-card-${index}`}
                 id={`project-card-${index}`}
                 value={project}
               />
             ))
             : dummyProjectsArr.map((project, index) => (
-              <ProjectCard
+              <ReposCard
                 key={`dummy-${index}`}
                 id={`dummy-${index}`}
                 value={project}

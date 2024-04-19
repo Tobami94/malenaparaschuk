@@ -2,7 +2,7 @@ import React from "react";
 
 import { Col } from "react-bootstrap";
 
-const ExperienceCard = ({ data }) => {
+const ProyectsCard = ({ data }) => {
   return (
     <Col lg="6">
       <div className="pb-5 text-center">
@@ -19,4 +19,4 @@ const ExperienceCard = ({ data }) => {
   );
 };
 
-export default ExperienceCard;
+export default ProyectsCard;

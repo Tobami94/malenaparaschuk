@@ -5,23 +5,23 @@ import {
   mainBody,
   about,
   repos,
-  leadership,
+  experience,
   skills,
   getInTouch,
-  experiences
+  proyects
 } from "./editable-stuff/config.js";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
-import Project from "./components/home/Project";
+import Repos from "./components/home/Repos";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Skills from "./components/home/skillsSection/Skills";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
-import Leadership from "./components/home/Leadership.jsx";
+import Experience from "./components/home/Experience.jsx";
 import BackTop from "./components/home/BackToTop/BacktoTop.jsx";
-import Experience from "./components/home/Experience";
+import Proyects from "./components/home/Proyects";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -42,11 +42,6 @@ const Home = React.forwardRef((props, ref) => {
           resume={about.resume}
         />
       )}
-      {
-        experiences.show && (
-          <Experience experiences={experiences}/>
-        )
-      }
       {skills.show && (
         <Skills
           heading={skills.heading}
@@ -54,22 +49,25 @@ const Home = React.forwardRef((props, ref) => {
           softSkills={skills.softSkills}
         />
       )}
+       {experience.show && (
+        <Experience
+         experience={experience}
+        />
+      )}
+      {
+        proyects.show && (
+          <Proyects proyects={proyects}/>
+        )
+      }
       {repos.show && (
-        <Project
+        <Repos
           heading={repos.heading}
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
         />
       )}
-      {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
-        />
-      )}
+      
       
     </>
   );

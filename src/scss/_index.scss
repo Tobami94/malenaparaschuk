@@ -29,6 +29,8 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -96,6 +98,14 @@ code {
   }
 }
 
+a {
+  color: #868e96;
+  text-decoration: none;
+  &:hover {
+      color: #ff4f93;
+  }
+}
+
 .title {
   height: 100%;
   left: 0;
@@ -119,7 +129,7 @@ code {
   transition: transform 0.3s, box-shadow 0.3s;
   &:hover {
     box-shadow: 0 2rem 3rem rgba($black, 0.175) !important;
-    transform: translateY(-2px);
+    //transform: translateY(-2px); quitar movimiento
     transition: transform 0.3s, box-shadow 0.3s;
   }
 }

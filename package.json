@@ -1,6 +1,6 @@
 {
-  "name": "developers-portfolio",
-  "description": "A personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects.",
+  "name": "paraschuk_frontend_portfolio",
+  "description": "",
   "homepage": "https://Tobami94.github.io/malenaparaschuk",
   "version": "2.0.0",
   "dependencies": {
@@ -53,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+
   }
 }

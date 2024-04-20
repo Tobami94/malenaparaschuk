@@ -18,11 +18,11 @@ const ExperienceCard = ({ data }) => {
             {data.tools?.map((t) => {
               const key = t.tool ? t.tool : t.id;
               return (
-                <button
-                  className="btn btn-outline-secondary mx-1 mb-1"
+                <span
+                  className="btnexp  p-1 mx-1 mb-1  rounded-3"
                   key={key}>
                   {t.tool}
-                </button>
+                </span>
               );
             })}
           </div>

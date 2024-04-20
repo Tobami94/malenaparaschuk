@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import { skills } from '../../../editable-stuff/config'
 
 
-const Skills = React.forwardRef(({ heading, hardSkills, softSkills }, ref) => {
+const Skills = React.forwardRef(({ heading }, ref) => {
  
   return (
     <Jumbotron  fluid className="bg-white m-0" id="skills">

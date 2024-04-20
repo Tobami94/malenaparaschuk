@@ -54,10 +54,11 @@ code {
   -o-animation: BackgroundAnimation 70s ease infinite;
   animation: BackgroundAnimation 70s ease infinite;
   height: 100%;
+ 
 }
 
 .bg-gradient {
-  background: linear-gradient(rgba(245, 245, 245, 1), rgba(245, 245, 245, 0));
+  background: linear-gradient(rgb(0, 0, 0), rgba(245, 245, 245, 0));
 }
 
 .navbar-transparent {
@@ -65,11 +66,11 @@ code {
   transition: background-color 0.2s;
 }
 .navbar-white {
-  background-color: rgba(234, 236, 239, 0.81);
+  background-color: rgba(58, 36, 51, 0.81);
   transition: background-color 0.2s;
 }
 .brand {
-  color: #363636 !important;
+  color: #000000 !important;
 }
 .nav-item {
   transition: color, 0.2s;
@@ -125,7 +126,9 @@ a {
   }
 }
 
+
 .card {
+  
   transition: transform 0.3s, box-shadow 0.3s;
   &:hover {
     box-shadow: 0 2rem 3rem rgba($black, 0.175) !important;
@@ -152,4 +155,18 @@ a {
   & > * {
     animation: progress 1.5s ease-in-out forwards;
   }
+}
+
+.btnexp {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  color: #faafcc;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  background-color: #8a5678;
+  border: 1px solid transparent;
+ 
+
 }

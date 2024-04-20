@@ -1,4 +1,4 @@
-import { SiRedux, SiHtml5, SiCss3, SiPhp, SiPostgresql, SiJavascript, SiReact, SiNodedotjs, SiExpress, SiNpm, SiMysql, SiBootstrap, SiJest, SiPostman, SiWordpress, SiDocker      } from 'react-icons/si';
+import { SiLinkedin, SiGithub,  SiRedux, SiHtml5, SiCss3, SiPhp, SiPostgresql, SiJavascript, SiReact, SiNodedotjs, SiExpress, SiNpm, SiMysql, SiBootstrap, SiJest, SiPostman, SiWordpress, SiDocker      } from 'react-icons/si';
 
 // Navigation Bar SECTION
 const navBar = {
@@ -14,17 +14,16 @@ const mainBody = {
   message: " Apasionada en crear experiencias digitales profesionales.",
   icons: [
     {
-      image: "fa-github",
+      name: "github",
+      icon: <SiGithub />,
       url: "https://github.com/Tobami94",
     },
     {
-      image: "fa-linkedin",
+      name: "linkedin",
+      icon: <SiLinkedin />,
       url: "https://www.linkedin.com/in/malena-paraschuk/",
     },
-    {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/malenaparaschuk/",
-    },
+   
   ],
 };
 

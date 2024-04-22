@@ -27,7 +27,7 @@ const BackTop = () => {
   return (
     <>
       {showButton && (
-        <button class="buttonBackTop" onClick={scrollToTop}></button>
+        <button className="buttonBackTop" onClick={scrollToTop}></button>
       )}
     </>
   );

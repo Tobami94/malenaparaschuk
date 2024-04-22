@@ -1,4 +1,4 @@
-import { SiLinkedin, SiGithub,  SiRedux, SiHtml5, SiCss3, SiPhp, SiPostgresql, SiJavascript, SiReact, SiNodedotjs, SiExpress, SiNpm, SiMysql, SiBootstrap, SiJest, SiPostman, SiWordpress, SiDocker      } from 'react-icons/si';
+import { SiTailwindcss, SiLinkedin, SiGithub,  SiRedux, SiHtml5, SiCss3, SiPhp, SiPostgresql, SiJavascript, SiReact, SiNodedotjs, SiExpress, SiNpm, SiMysql, SiBootstrap, SiJest, SiPostman, SiWordpress, SiDocker      } from 'react-icons/si';
 
 // Navigation Bar SECTION
 const navBar = {
@@ -11,6 +11,7 @@ const mainBody = {
   firstName: "Malena",
   middleName: "",
   lastName: "Paraschuk",
+  titleSub: "Mid Frontend Developer",
   message: " Apasionada en crear experiencias digitales profesionales.",
   icons: [
     {
@@ -32,16 +33,16 @@ const about = {
   show: true,
   heading: "¿Quién soy?",
   imageLink: require("../editable-stuff/profile_maleP.png"),
-  imageSize: 375,
+  imageSize: 400,
   message:(
-    <div> <p class="1">En 2011, decidí intentar crear temas personalizados para Foroactivo y caí de cabeza en la madriguera de la codificación,  el desarrollo web y el diseño gráfico.</p>
+    <div> <p className="1">En 2011, decidí intentar crear temas personalizados para Foroactivo y caí de cabeza en la madriguera de la codificación,  el desarrollo web y el diseño gráfico.</p>
        
-      <p class="2"> Si avanzamos hasta el día de hoy, he tenido el privilegio de crear algunas web importantes, foros, y algunas aplicaciones que demuestran algo de mis habilidades. Mi principal objetivo estos días es crear interfaces hermosas y accesibles  ¿a todos nos gusta una web funcional y visualmente agradable cierto?. Lo que más disfruto es crear, diseñar algo desde cero, en el punto ideal donde se unen el diseño gráfico y el desarrollo: cosas que se ven bien pero que también están bien construidas bajo toda esa capa de cosas bonitas. En mi tiempo libre, también he desarrollado algunos bots de <a class="hover:text #ff4f93" href="https://discord.com/">Discord</a>, programado algún que otro servidor de juegos multijugador, diseños por placer en Photoshop, etc. Una mezcla de cosas.</p>
+      <p className="2"> Si avanzamos hasta el día de hoy, he tenido el privilegio de crear algunas web importantes, foros, y algunas aplicaciones que demuestran algo de mis habilidades. Mi principal objetivo estos días es crear interfaces hermosas y accesibles  ¿a todos nos gusta una web funcional y visualmente agradable cierto?. Lo que más disfruto es crear, diseñar algo desde cero, en el punto ideal donde se unen el diseño gráfico y el desarrollo: cosas que se ven bien pero que también están bien construidas bajo toda esa capa de cosas bonitas. En mi tiempo libre, también he desarrollado algunos bots de <a class="hover:text #ff4f93" href="https://discord.com/">Discord</a>, programado algún que otro servidor de juegos multijugador, diseños por placer en Photoshop, etc. Una mezcla de cosas.</p>
        
-      <p class="3"> Cuando no estoy frente al ordenador, normalmente estoy cuidando de mis plantas, entrenando karate o incluso realizando alguna caminata al aire libre. </p>
+      <p className="3"> Cuando no estoy frente al ordenador, normalmente estoy cuidando de mis plantas, entrenando karate o incluso realizando alguna caminata al aire libre. </p>
       
       </div>),
-  resume: "https://drive.google.com/file/d/1KWSmXE1QO_xKN0bj8Pch2xBUaXLpmVN9/view?usp=drive_link",
+  resume: "https://drive.google.com/file/d/1_tPTuiBE1s8apZfDXWPBtDQ_2vcgqanx/view",
 };
 
 
@@ -61,64 +62,44 @@ const experience = {
    
     {
       role: 'Desarrollo web · Freelancer',
-      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
+      date: '2021 — PRESENTE',
       tools: [ 
-         { tool: "JavaScript"},
+         { tool: "Javascript"},
          { tool: "React"},
          { tool: "Vue"},
          { tool: "PHP"},
          { tool: "HTML & SCSS"},
          { tool: "Contentful"},
          { tool: "Wordpress"},
-         { tool: "Elementor"},
     ],
-      resumen: 'Realicé el tema de la [Sociedad Hípica Lebrera](https://sociedadhipicalebrera.es), entre otras páginas en producción. Esta página mencionada fue desarrollada con CMS (wordpress), Javascript, Bootstrap y HTML principalmente.'
+      resumen:(
+        <p className="z-10">Desarrollar y mantener los componentes fundamentales que dan forma a las interfaces de usuario. Colaborar estrechamente con equipos multifuncionales, incluyendo desarrolladores, diseñadores y gerentes de producto, para implementar y promover las mejores prácticas de accesibilidad web. Garantizar la coherencia y la calidad en la experiencia del usuario mediante la creación y optimización de interfaces intuitivas y eficientes.</p>
+        ), 
+
+       enlaces: [
+        { url: "https://sociedadhipicalebrera.es",
+        texto: "Soc. Hípica Lebrera"},
+        { url: "https://veteransbasquetfcb.com/",
+        texto: "VeteransBasquetFCB"},
+        { url: "https://hammamfarasha.com/",
+        texto: "Hammam Farasha"},
+      
+       ]
+        
     },
     {
-      role: 'Front-End Developer · Freelancer',
-      date: 'oct. 2021 - sept. 2022 · 1 año · Remoto',
+      role: 'Frontend Developer · NEOSHIHARA',
+      date: '2018 — 2021',
       tools: [ 
         { tool: "JavaScript"},
         { tool: "React"},
-        { tool: "Vue"},
-        { tool: "PHP"},
-        { tool: "HTML & SCSS"},
+        { tool: "HTML, SCSS, Tailwind"},
         { tool: "Contentful"},
-        { tool: "Wordpress"},
-        { tool: "Elementor"},
+        { tool: "Node.js"},
    ],
-      resumen: 'Corrección de errores y optimización en la web Veteranos FCB básquet.'
+      resumen:( <p className="z-10"> Creación de aplicaciones escalables que impulsaran las ventas y los servicios de nuestros clientes. En este rol, lideré proyectos que abarcaron desde el diseño y desarrollo web hasta la implementación de soluciones de comercio electrónico utilizando plataformas como MercadoPago y PayPal. Además, colaboré en la creación de plataformas B2B/B2C, integraciones con tiendas en la Nube y la construcción de Landing Pages, entre otras responsabilidades.</p>),
     },
-    {
-      role: 'Servicio de atención al cliente', 
-      date: 'ago. 2018 - oct. 2018 · 3 meses · Presencial',
-      tools: [ 
-        { tool: "JavaScript"},
-        { tool: "React"},
-        { tool: "Vue"},
-        { tool: "PHP"},
-        { tool: "HTML & SCSS"},
-        { tool: "Contentful"},
-        { tool: "Wordpress"},
-        { tool: "Elementor"},
-   ],
-      resumen:  'En el centro de llamadas de Movistar, brindamos soporte de ventas y servicio al cliente a los clientes por teléfono. Nuestro equipo está dedicado a ayudar a los clientes con sus consultas, inquietudes y solicitudes relacionadas con los productos y servicios de Movistar.'
-    },
-    {
-      role: 'Centro de atención telefónica',
-      date: 'jul. 2016 - oct. 2017 · 1 año 4 meses · Presencial',
-      tools: [ 
-        { tool: "JavaScript"},
-        { tool: "React"},
-        { tool: "Vue"},
-        { tool: "PHP"},
-        { tool: "HTML & SCSS"},
-        { tool: "Contentful"},
-        { tool: "Wordpress"},
-        { tool: "Elementor"},
-   ],
-      resumen:  'Trabajé en el departamento de servicio al cliente, donde manejé exitosamente bases de datos y mantuve mi propia cartera de clientes. Mis principales responsabilidades incluían la promoción y venta efectiva de varios planes y productos a los clientes. Además, brindé un soporte técnico excepcional, resolviendo rápidamente cualquier problema o inquietud que los clientes encontraran con los productos.'
-    }
+    
 ],
   imageSize: {
     width:"615",
@@ -194,7 +175,10 @@ const skills = {
       {
         skillName: "docker",
         icon: <SiDocker />,
-      }
+      },
+      { skillName: "tailwindcss",
+    icon: <SiTailwindcss />
+  },
   ],
 };
 
@@ -212,13 +196,25 @@ const proyects = {
   heading: "Proyectos",
   data: [
     {
-      role: 'Full stack web · Aplicaciones web en react · Proyecto',
+      role: 'Full stack web · Aplicaciones web en react',
       companylogo: require('../assets/img/pokedex.png'),
       date: 'abr. 2023 – may. 2023 · 1 mes · Proyecto',
       resumen: 'He desarrollado una aplicación que cuenta con la funcionalidad de una Pokédex, con características de diseño responsivo y adaptado visualmente para las necesidades del usuario. La aplicación realiza peticiones a una API externa y ofrece un desarrollo en: front, back y bases de datos relacionales'
     },
     {
-      role: 'Full stack web · Aplicaciones web en react · Proyecto',
+      role: 'Dashboard · Aplicaciones web en react',
+      companylogo: require('../assets/img/rickMorty.png'),
+      date: 'May 2017 – May 2018',
+      resumen: 'Diseño y desarrollo de una aplicación web que incluya características como: Funcionalidad de búsqueda Filtros combinados, Solicitudes a aplicaciones externas, Creación de publicaciones, Bases de datos relacionales, Creación de perfiles (operaciones CRUD)'
+    },
+    {
+      role: 'Clone Spotify · Aplicaciones web en react',
+      companylogo: require('../assets/img/rickMorty.png'),
+      date: 'May 2017 – May 2018',
+      resumen: 'Diseño y desarrollo de una aplicación web que incluya características como: Funcionalidad de búsqueda Filtros combinados, Solicitudes a aplicaciones externas, Creación de publicaciones, Bases de datos relacionales, Creación de perfiles (operaciones CRUD)'
+    },
+    {
+      role: 'Bot Discord ',
       companylogo: require('../assets/img/rickMorty.png'),
       date: 'May 2017 – May 2018',
       resumen: 'Diseño y desarrollo de una aplicación web que incluya características como: Funcionalidad de búsqueda Filtros combinados, Solicitudes a aplicaciones externas, Creación de publicaciones, Bases de datos relacionales, Creación de perfiles (operaciones CRUD)'

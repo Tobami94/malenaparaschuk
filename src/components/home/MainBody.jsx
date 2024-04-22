@@ -4,7 +4,7 @@ import Typist from "react-typist-component";
 import { Jumbotron } from "./migration";
 import { mainBody } from "../../editable-stuff/config";
 
-const MainBody = React.forwardRef(({ gradient, title, message }, ref) => {
+const MainBody = React.forwardRef(({ gradient, title, subtitle, message }, ref) => {
   return (
     <Jumbotron
       fluid
@@ -19,6 +19,9 @@ const MainBody = React.forwardRef(({ gradient, title, message }, ref) => {
         <h1 ref={ref} className="display-1">
           {title}
         </h1>
+        <h3 ref={ref} >
+          {subtitle}
+        </h3>
         <Typist>
           <div className="lead typist">{message}</div>
         </Typist>

@@ -7,7 +7,7 @@ import Skeleton from "react-loading-skeleton";
 const ProyectsCard = ({ data }) => {
   return (
     <Col lg="6">
-      <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+      <Card className="cardProject shadow-lg p-3 mb-5 bg-white rounded">
         <Card.Body>
           <div className="d-grid gap-3 d-md-inline-flex">
             <div key="container-image">

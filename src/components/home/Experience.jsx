@@ -19,7 +19,6 @@ const Experience = ({ experience, resume }) => {
 
           <div className="d-flex justify-content-center">
             <a
-              key="id"
               className={`d-inline-flex align-items-center p-1 mx-3 mb-1 ${
                 isHovered ? "hovered" : ""
               }`}

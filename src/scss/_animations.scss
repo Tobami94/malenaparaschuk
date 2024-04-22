@@ -65,3 +65,9 @@
     transform: scaleX(1);
   }
 }
+
+.hovered svg {
+  transform-origin: bottom;
+  transform: translateY(-5px); /* Cambia la cantidad de píxeles que desees que se mueva */
+  transition: transform 0.3s ease; /* Agrega una transición suave */
+}

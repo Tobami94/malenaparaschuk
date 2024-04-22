@@ -20,11 +20,11 @@ const Experience = ({ experience, resume }) => {
           <div className="d-flex justify-content-center">
             <a
               key="id"
-              className="d-inline-flex align-items-center p-1 mx-3 mb-1"
+              className={`d-inline-flex align-items-center p-1 mx-3 mb-1 ${isHovered ? 'hovered' : ''}`}
               href={resume}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ textDecoration: "none", position: "relative" }}
+              style={{ textDecoration: "none" }}
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}>
               <span className="resume me-1">Ver perfil completo</span>

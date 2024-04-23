@@ -19,7 +19,7 @@ const Experience = ({ experience, resume }) => {
 
           <div className="d-flex justify-content-center">
             <a
-              className={`d-inline-flex align-items-center p-1 mx-3 mb-1 ${
+              className={`enlacess d-inline-flex align-items-center p-1 mx-3 mb-1 ${
                 isHovered ? "hovered" : ""
               }`}
               href={resume}

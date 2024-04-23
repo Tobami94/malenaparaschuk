@@ -37,7 +37,7 @@ const about = {
   message:(
     <div> <p className="1">En 2011, decidí intentar crear temas personalizados para Foroactivo y caí de cabeza en la madriguera de la codificación,  el desarrollo web y el diseño gráfico.</p>
        
-      <p className="2"> Si avanzamos hasta el día de hoy, he tenido el privilegio de crear algunas web importantes, foros, y algunas aplicaciones que demuestran algo de mis habilidades. Mi principal objetivo estos días es crear interfaces hermosas y accesibles  ¿a todos nos gusta una web funcional y visualmente agradable cierto?. Lo que más disfruto es crear, diseñar algo desde cero, en el punto ideal donde se unen el diseño gráfico y el desarrollo: cosas que se ven bien pero que también están bien construidas bajo toda esa capa de cosas bonitas. En mi tiempo libre, también he desarrollado algunos bots de <a class="hover:text #ff4f93" href="https://discord.com/">Discord</a>, programado algún que otro servidor de juegos multijugador, diseños por placer en Photoshop, etc. Una mezcla de cosas.</p>
+      <p className="2"> Si avanzamos hasta el día de hoy, he tenido el privilegio de crear algunas web importantes, foros, y algunas aplicaciones que demuestran algo de mis habilidades. Mi principal objetivo estos días es crear interfaces hermosas y accesibles  ¿a todos nos gusta una web funcional y visualmente agradable cierto?. Lo que más disfruto es crear, diseñar algo desde cero, en el punto ideal donde se unen el diseño gráfico y el desarrollo: cosas que se ven bien pero que también están bien construidas bajo toda esa capa de cosas bonitas. En mi tiempo libre, también he desarrollado algunos bots de <a className="enlacess hover:text #ff4f93" href="https://discord.com/">Discord</a>, programado algún que otro servidor de juegos multijugador, diseños por placer en Photoshop, etc. Una mezcla de cosas.</p>
        
       <p className="3"> Cuando no estoy frente al ordenador, normalmente estoy cuidando de mis plantas, entrenando karate o incluso realizando alguna caminata al aire libre. </p>
       
@@ -98,6 +98,15 @@ const experience = {
         { tool: "Node.js"},
    ],
       resumen:( <p className="z-10"> Creación de aplicaciones escalables que impulsaran las ventas y los servicios de nuestros clientes. En este rol, lideré proyectos que abarcaron desde el diseño y desarrollo web hasta la implementación de soluciones de comercio electrónico utilizando plataformas como MercadoPago y PayPal. Además, colaboré en la creación de plataformas B2B/B2C, integraciones con tiendas en la Nube y la construcción de Landing Pages, entre otras responsabilidades.</p>),
+   
+      
+      enlaces: [
+        { url: "https://neoshihara.com/proyectos/",
+        texto: "Neoshihara Projects"},
+        
+      
+       ]
+        
     },
     
 ],
@@ -196,30 +205,67 @@ const proyects = {
   heading: "Proyectos",
   data: [
     {
-      role: 'Full stack web · Aplicaciones web en react',
+      role: 'PokeApi',
       companylogo: require('../assets/img/pokedex.png'),
-      date: 'abr. 2023 – may. 2023 · 1 mes · Proyecto',
-      resumen: 'He desarrollado una aplicación que cuenta con la funcionalidad de una Pokédex, con características de diseño responsivo y adaptado visualmente para las necesidades del usuario. La aplicación realiza peticiones a una API externa y ofrece un desarrollo en: front, back y bases de datos relacionales'
+      tools: [ 
+        { tool: "Javascript"},
+        { tool: "React"},
+        { tool: "Vue"},
+        { tool: "PHP"},
+        { tool: "HTML & SCSS"},
+        { tool: "Contentful"},
+        { tool: "Wordpress"},
+   ],
+      resumen: (<p>He desarrollado una aplicación que cuenta con la funcionalidad de una Pokédex, con características de diseño responsivo y adaptado visualmente para las necesidades del usuario. La aplicación realiza peticiones a una API externa y ofrece un desarrollo en: front, back y bases de datos relacionales</p>),
+      url: "https://sociedadhipicalebrera.es"
+
     },
     {
-      role: 'Dashboard · Aplicaciones web en react',
+      role: 'Dashboard',
       companylogo: require('../assets/img/rickMorty.png'),
-      date: 'May 2017 – May 2018',
-      resumen: 'Diseño y desarrollo de una aplicación web que incluya características como: Funcionalidad de búsqueda Filtros combinados, Solicitudes a aplicaciones externas, Creación de publicaciones, Bases de datos relacionales, Creación de perfiles (operaciones CRUD)'
-    },
+      tools: [ 
+        { tool: "Javascript"},
+        { tool: "React"},
+        { tool: "Vue"},
+        { tool: "PHP"},
+        { tool: "HTML & SCSS"},
+        { tool: "Contentful"},
+        { tool: "Wordpress"},
+   ],
+   resumen: (<p>He desarrollado una aplicación que cuenta con la funcionalidad de una Pokédex, con características de diseño responsivo y adaptado visualmente para las necesidades del usuario. La aplicación realiza peticiones a una API externa y ofrece un desarrollo en: front, back y bases de datos relacionales</p>),
+   url: "https://sociedadhipicalebrera.es",
+ },
     {
-      role: 'Clone Spotify · Aplicaciones web en react',
+      role: 'Clone Spotify',
       companylogo: require('../assets/img/rickMorty.png'),
-      date: 'May 2017 – May 2018',
-      resumen: 'Diseño y desarrollo de una aplicación web que incluya características como: Funcionalidad de búsqueda Filtros combinados, Solicitudes a aplicaciones externas, Creación de publicaciones, Bases de datos relacionales, Creación de perfiles (operaciones CRUD)'
-    },
+      tools: [ 
+        { tool: "Javascript"},
+        { tool: "React"},
+        { tool: "Vue"},
+        { tool: "PHP"},
+        { tool: "HTML & SCSS"},
+        { tool: "Contentful"},
+        { tool: "Wordpress"},
+   ],
+   resumen: (<p>He desarrollado una aplicación que cuenta con la funcionalidad de una Pokédex, con características de diseño responsivo y adaptado visualmente para las necesidades del usuario. La aplicación realiza peticiones a una API externa y ofrece un desarrollo en: front, back y bases de datos relacionales</p>),
+   url: "https://sociedadhipicalebrera.es",
+ },
     {
-      role: 'Bot Discord ',
+      role: 'Bot Discord',
       companylogo: require('../assets/img/rickMorty.png'),
-      date: 'May 2017 – May 2018',
-      resumen: 'Diseño y desarrollo de una aplicación web que incluya características como: Funcionalidad de búsqueda Filtros combinados, Solicitudes a aplicaciones externas, Creación de publicaciones, Bases de datos relacionales, Creación de perfiles (operaciones CRUD)'
-    },
+      tools: [ 
+        { tool: "Javascript"},
+        { tool: "React"},
+        { tool: "Vue"},
+        { tool: "PHP"},
+        { tool: "HTML & SCSS"},
+        { tool: "Contentful"},
+        { tool: "Wordpress"},
+   ],
+   resumen: (<p>He desarrollado una aplicación que cuenta con la funcionalidad de una Pokédex, con características de diseño responsivo y adaptado visualmente para las necesidades del usuario. La aplicación realiza peticiones a una API externa y ofrece un desarrollo en: front, back y bases de datos relacionales</p>),
+   url: "https://sociedadhipicalebrera.es",
    
+  }
   ]
 }
 

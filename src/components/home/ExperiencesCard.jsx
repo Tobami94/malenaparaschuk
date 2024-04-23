@@ -7,7 +7,9 @@ import Skeleton from "react-loading-skeleton";
 const ExperienceCard = ({ data }) => {
   return (
     <Col md={6}>
-      <Card className="card shadow-lg p-3 mb-5 bg-white rounded">
+      <div className="d-flex align-items-center p-1 mx-1 mb-1 rounded-3">
+
+      <Card className="card p-3 mb-5 bg-white rounded">
         <Card.Body>
           <Card.Title as="h5">{data.role || <Skeleton />} </Card.Title>
           <small className="text-muted">{data.date}</small>
@@ -18,7 +20,7 @@ const ExperienceCard = ({ data }) => {
             {data.enlaces?.map((enlace, index) => (
               <a
                 key={index}
-                className="d-flex align-items-center p-1 mx-1 mb-1 rounded-3"
+                className="enlacess d-flex align-items-center p-1 mx-1 mb-1 rounded-3"
                 href={enlace.url}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -43,7 +45,7 @@ const ExperienceCard = ({ data }) => {
             {data.tools?.map((t) => {
               const key = t.tool ? t.tool : t.id;
               return (
-                <span className="btnexp  p-1 mx-1 mb-1  rounded-3" key={key}>
+                <span className="btnexp  p-1 mx-1 mb-1  rounded-3 border" key={key}>
                   {t.tool}
                 </span>
               );
@@ -51,6 +53,7 @@ const ExperienceCard = ({ data }) => {
           </div>
         </Card.Body>
       </Card>
+      </div>
     </Col>
   );
 };

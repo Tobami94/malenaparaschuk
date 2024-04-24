@@ -10,13 +10,14 @@ const Footer = (props) => {
         {props.children}
         <i className="fas fa-code" /> with <i className="fas fa-heart" /> by{" "}
         <a
-          rel="noopener"
+          className="enlacess"
+          target="_blank"
+          rel="noopener noreferrer"
           href="https://github.com/Tobami94"
           aria-label="My GitHub">
           {" "}
           <span className="badge bg-dark">Malena Paraschuk</span>
-        </a>{" "}
-        desarrollado con <i className="fab fa-react" />
+        </a>
         <p></p>
       </Container>
     </footer>

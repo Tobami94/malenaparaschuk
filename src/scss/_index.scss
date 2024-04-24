@@ -149,15 +149,6 @@ li, ul {
   }
 }
 
-.cardProject {
-  transition: transform 0.3s, box-shadow 0.3s;
-  &:hover {
-    box-shadow: 0 1rem 2rem rgba($black, 0.175) !important;
-    //transform: translateY(-2px); quitar movimiento
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-}
-
 
 
 .skills-tabs {
@@ -205,4 +196,13 @@ li, ul {
 
 .textProject {
   color: #131213;
+}
+
+.cardProject {
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover {
+    box-shadow: 0 1rem 2rem rgba($black, 0.175) !important;
+    //transform: translateY(-2px); quitar movimiento
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
 }

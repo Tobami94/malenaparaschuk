@@ -18,18 +18,18 @@ const ProyectsCard = ({ data }) => {
 
   return (
     <Col lg="6">
-      <Card className="cardProject p-3 mb-5 bg-white rounded">
-        <a
-          className={`d-flex align-items-center p-1 mx-1 mb-1 rounded-3
+      <a
+        className={`d-flex align-items-center p-1 mx-1 mb-1 rounded-3
       ${isHoveredP ? "hovered" : ""}`}
-          href={data.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          onMouseEnter={() => setIsHoveredP(true)}
-          onMouseLeave={() => setIsHoveredP(false)}>
+        href={data.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        onMouseEnter={() => setIsHoveredP(true)}
+        onMouseLeave={() => setIsHoveredP(false)}>
+        <Card className="cardProject p-3 mb-5 bg-white rounded">
           <Card.Body>
             <div
-              className="d-grid gap-3 d-md-inline-flex"
+              className="titleProject d-grid gap-3 d-md-inline-flex"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}>
               <div className="border-secondary">
@@ -41,7 +41,7 @@ const ProyectsCard = ({ data }) => {
                   src={data.companylogo}
                 />
               </div>
-              <div className="titleProject">
+              <div>
                 <Card.Title className=" h5">
                   {data.role || <Skeleton />}
                   <svg
@@ -64,18 +64,20 @@ const ProyectsCard = ({ data }) => {
               </div>
             </div>
             <div className="button-tools d-grid gap-2 d-md-block">
-            {data.tools?.map((t) => {
-              const key = t.tool ? t.tool : t.id;
-              return (
-                <span className="btnexp  p-1 mx-1 mb-1  rounded-3 border" key={key}>
-                  {t.tool}
-                </span>
-              );
-            })}
-          </div>
+              {data.tools?.map((t) => {
+                const key = t.tool ? t.tool : t.id;
+                return (
+                  <span
+                    className="btnexp  p-1 mx-1 mb-1  rounded-3 border"
+                    key={key}>
+                    {t.tool}
+                  </span>
+                );
+              })}
+            </div>
           </Card.Body>
-        </a>
-      </Card>
+        </Card>
+      </a>
     </Col>
   );
 };

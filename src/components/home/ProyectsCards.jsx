@@ -37,6 +37,7 @@ const ProyectsCard = ({ data }) => {
                   className="rounded-3"
                   width="200"
                   height="140"
+                  alt="imgproject"
                   style={{ border: `3px solid ${borderColor}` }}
                   src={data.companylogo}
                 />

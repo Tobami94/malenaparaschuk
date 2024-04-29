@@ -250,7 +250,7 @@ const proyects = {
  },
     {
       role: 'Trono de Sombras ▪ Bot Discord',
-      companylogo: require('../assets/img/rickMorty.png'),
+      companylogo: require('../assets/img/embled.png'),
       tools: [ 
         { tool: "Javascript"},
          { tool: "MongoDB"},

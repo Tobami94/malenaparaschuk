@@ -13,8 +13,9 @@ const MainBody = React.forwardRef(({ gradient, title, subtitle, message }, ref) 
         background: `linear-gradient(136deg,${gradient})`,
         backgroundSize: "1200% 1200%",
       }}
+
       className="title bg-transparent bgstyle text-light min-vh-100 d-flex align-content-center align-items-center flex-wrap m-0">
-      <div id="stars"></div>
+    
       <Container className="text-center">
         <h1 ref={ref} className="display-1">
           {title}

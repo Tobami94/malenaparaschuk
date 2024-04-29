@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/malenaparaschuk/static/css/main.04861781.css",
+    "main.js": "/malenaparaschuk/static/js/main.abd2c978.js",
+    "static/js/787.4b24f717.chunk.js": "/malenaparaschuk/static/js/787.4b24f717.chunk.js",
+    "static/media/profile_maleP.png": "/malenaparaschuk/static/media/profile_maleP.3e5afa5bf6ca4c629c7f.png",
+    "static/media/pokedex.png": "/malenaparaschuk/static/media/pokedex.5bb63206963d5ce3d81d.png",
+    "static/media/veterans.png": "/malenaparaschuk/static/media/veterans.3b529a0343bafb4fdb1f.png",
+    "static/media/rickMorty.png": "/malenaparaschuk/static/media/rickMorty.c27ab89e53869cfc4886.png",
+    "static/media/movistar.png": "/malenaparaschuk/static/media/movistar.f018be73219c3ad33aa1.png",
+    "static/media/CMS.png": "/malenaparaschuk/static/media/CMS.c9a71d4c94e6dcd9f009.png",
+    "index.html": "/malenaparaschuk/index.html",
+    "main.04861781.css.map": "/malenaparaschuk/static/css/main.04861781.css.map",
+    "main.abd2c978.js.map": "/malenaparaschuk/static/js/main.abd2c978.js.map",
+    "787.4b24f717.chunk.js.map": "/malenaparaschuk/static/js/787.4b24f717.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.04861781.css",
+    "static/js/main.abd2c978.js"
+  ]
+}

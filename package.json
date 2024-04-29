@@ -1,7 +1,7 @@
 {
   "name": "paraschuk_frontend_portfolio",
   "description": "",
-  "homepage": "https://Tobami94.github.io/malenaparaschuk",
+  "homepage": "https://github.com/Tobami94/malenaparaschuk",
   "version": "2.0.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

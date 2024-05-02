@@ -17,9 +17,9 @@ const ProyectsCard = ({ data }) => {
   };
 
   return (
-    <Col lg="6">
+    <Col lg={6}>
       <a
-        className={`d-flex align-items-center p-1 mx-1 mb-1 rounded-3
+        className={`enlacess d-flex align-items-center p-1 mx-1 mb-1 rounded-3
       ${isHoveredP ? "hovered" : ""}`}
         href={data.url}
         target="_blank"
@@ -43,7 +43,7 @@ const ProyectsCard = ({ data }) => {
                 />
               </div>
               <div>
-                <Card.Title className=" h5">
+                <Card.Title ClassName="h5">
                   {data.role || <Skeleton />}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

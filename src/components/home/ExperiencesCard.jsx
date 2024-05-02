@@ -11,7 +11,7 @@ const ExperienceCard = ({ data }) => {
 
       <Card className="card p-3 mb-5 bg-white rounded">
         <Card.Body>
-          <Card.Title as="h5">{data.role || <Skeleton />} </Card.Title>
+          <Card.Title ClassName="h5">{data.role || <Skeleton />} </Card.Title>
           <small className="text-muted">{data.date}</small>
           <Card.Text>
             {!data.resumen ? "" : data.resumen || <Skeleton count={3} />}{" "}

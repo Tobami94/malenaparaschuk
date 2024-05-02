@@ -220,7 +220,7 @@ const proyects = {
 
     },
     {
-      role: 'Dashboard Administrador',
+      role: 'Dashboard',
       companylogo: require('../assets/img/rickMorty.png'),
       tools: [ 
         { tool: "Javascript"},
@@ -249,7 +249,7 @@ const proyects = {
    url: "",
  },
     {
-      role: 'Trono de Sombras ▪ Bot Discord',
+      role: 'Bot Discord.js',
       companylogo: require('../assets/img/embled.png'),
       tools: [ 
         { tool: "Javascript"},

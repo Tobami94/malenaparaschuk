@@ -68,7 +68,7 @@ const App = () => {
   const titleRef = React.useRef();
 
   return (
-    <BrowserRouter basename="Tobami94/malenaparaschuk">
+<>
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
         <Route path="/" exact element={<Home ref={titleRef} />} />
@@ -83,7 +83,7 @@ const App = () => {
           />
         )}
       </Footer>
-    </BrowserRouter>
+      </>
   );
 };
 

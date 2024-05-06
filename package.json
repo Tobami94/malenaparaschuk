@@ -1,7 +1,7 @@
 {
   "name": "paraschuk_frontend_portfolio",
   "description": "",
-  "homepage": "https://github.com/Tobami94/malenaparaschuk",
+  "homepage": "https://Tobami94.github.io/malenaparaschuk",
   "version": "2.0.0",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -24,13 +24,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "main -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+
   "engines": {
     "npm": "10.5.0",
     "node": "v18.20.2"
